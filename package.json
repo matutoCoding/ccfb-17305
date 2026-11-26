@@ -1,0 +1,30 @@
+{
+  "name": "pipe-tml-3d",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "管道定点测厚三维减薄分析系统 (TypeScript + WebGPU + IndexedDB)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "tsx test/e2e-check.ts",
+    "generate": "tsx scripts/generate-demo-data.ts"
+  },
+  "dependencies": {
+    "idb": "^8.0.0",
+    "preact": "^10.24.3"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.1",
+    "@types/node": "^22.20.7",
+    "@webgpu/types": "^0.1.51",
+    "playwright-core": "^1.65.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
